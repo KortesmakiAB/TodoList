@@ -1,0 +1,63 @@
+body {
+	background-color: honeydew;
+}
+.bg {
+	height: 85vh;
+	position: relative;
+	margin: 35px;
+	padding: 35px;
+	font-family: 'Rock Salt', cursive;
+}
+.bg::before {
+	content: "";
+	background-image: url('https://produceforkids.com/wp-content/uploads/2020/05/Honeydew-background.jpg');
+	background-size: cover;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.85;
+}
+/* MUST SET position of other items to 'relative' to not pass the opacity to the siblings, children, etc. */
+h1 {
+	position: relative;
+	left: 100px;
+}
+
+/* form & buttons */
+.formClass {
+	position: relative;
+	display: inline;
+}
+#new-task {
+	width: 200px;
+	height: 20px;
+	padding: 3px;
+}
+button {
+	padding: 6px;
+	border-radius: 8px;
+	color: white;
+	font-size: 1.05em;
+	background-color: #808080;
+	border: none;
+}
+.remove {
+	position: relative;
+}
+
+/* UL & LI */
+#list {
+	position: relative;
+	font-size: 1.65em;
+}
+input[type="checkbox"] {
+	margin: 10px;
+}
+.noBullet {
+	list-style: none;
+}
+.completed {
+	text-decoration: line-through;
+}
